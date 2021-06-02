@@ -3,7 +3,15 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int);
+float wallis_pi(int n) {
+  float rslt = 1.0;
+  float pdt;
+  for(int i = 1; i <=n; i++) {
+    pdt = (float)(4.0*i*i);
+    rslt *= pdt/(pdt-1);
+  }
+  return (2*rslt);
+}
 
 int main(void) {
   float pi;
@@ -24,15 +32,6 @@ int main(void) {
   }
 }
 
-float wallis_pi(int n) {
-  float rslt = 1.0;
-  float pdt;
-  for(int i = 1; i <=n; i++) {
-    pdt = (float)(4.0*i*i);
-    rslt *= pdt/(pdt-1);
-  }
-  return (2*rslt);
-}
       
     
   
