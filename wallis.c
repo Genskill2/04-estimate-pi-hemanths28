@@ -26,10 +26,9 @@ int main(void) {
 
 float wallis_pi(int n) {
   float rslt = 1;
-  int N = n*n;
   float pdt;
-  for(int i = 1; i <n; i++) {
-    pdt = 4*N;
+  for(int i = 1; i <=n; i++) {
+    pdt = 4*i*i;
     rslt *= pdt/(pdt-1);
   }
   return 2*rslt;
