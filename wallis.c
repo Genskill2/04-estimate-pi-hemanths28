@@ -25,17 +25,18 @@ int main(void) {
 }
 
 float main(int n) {
-  float rslt = 8/3;
+  float rslt = 4/3;
   int N = n*n;
+  float pdt;
   for(int i = 1; i <=n; i++) {
     if(n==1) {
-      return rslt;
+      return 2*rslt;
     }
     else
-    pdt = (2*4*N)/((4*N)-1);
+    pdt = (4*N)/((4*N)-1);
     rslt = rslt * pdt;
   }
-  return rslt;
+  return 2*rslt;
 }
       
     
