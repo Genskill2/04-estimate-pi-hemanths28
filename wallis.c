@@ -24,3 +24,20 @@ int main(void) {
   }
 }
 
+float main(int n) {
+  float rslt = 8/3;
+  int N = n*n;
+  for(int i = 1; i <=n; i++) {
+    if(n==1) {
+      return rslt;
+    }
+    else
+    pdt = (2*4*N)/((4*N)-1);
+    rslt = rslt * pdt;
+  }
+  return rslt;
+}
+      
+    
+  
+
