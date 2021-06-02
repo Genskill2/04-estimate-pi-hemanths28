@@ -24,7 +24,7 @@ int main(void) {
   }
 }
 
-float main(int n) {
+float wallis_pi(int n) {
   float rslt = 4/3;
   int N = n*n;
   float pdt;
