@@ -6,7 +6,7 @@
 float wallis_pi(int n) {
   float rslt = 1.0;
   float pdt;
-  for(int i = 1; i <=n; i++) {
+  for(float i = 1; i <=n; i++) {
     pdt = (float)(4.0*i*i);
     rslt *= pdt/(pdt-1);
   }
