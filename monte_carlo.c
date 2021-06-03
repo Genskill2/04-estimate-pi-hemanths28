@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <math.h>
 
+float frandom() {
+  long int q = random();
+  float ret = (float)q/(float)RAND_MAX;
+  return ret;
+}
+
 float mc_pi(int n) {
   float insideCircle = 0, insideSquare = 0;
   float a,b,originDist,pi;
@@ -12,20 +18,11 @@ float mc_pi(int n) {
     originDist = a*a + b*b;
     if(originDist<=1) {
       insideCircle++;
-    else
-      insideSquare++;
     }
+    insideSquare++;
   }
-  
   pi = (float)((4*insideCircle)/(insideSquare));
   return pi;
-}
-    
-
-float frandom() {
-  long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
 }
 
 int main(void) {
@@ -55,6 +52,3 @@ int main(void) {
     }
   }
 }
-
-
-
