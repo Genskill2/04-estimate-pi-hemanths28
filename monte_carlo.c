@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int) {
+float mc_pi(int n) {
   float insideCircle = 0, insideSquare = 0;
   float a,b,originDist,pi;
   for(int i=0;i<n;i++) {
